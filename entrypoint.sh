@@ -10,5 +10,8 @@ openssl req -x509 -nodes -days 3650 -subj "/C=DE/ST=Hamburg/O=https-auth-proxy/C
 # generate encrypted password by using secret variable
 htpasswd -c -b /etc/nginx/.htpasswd admin "${ADMIN_PASSWD}"
 
+#test
+cat /etc/nginx/.htpasswd
+
 # run additional commands given by Dockerfile
 exec "$@"
