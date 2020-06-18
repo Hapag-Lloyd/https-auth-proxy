@@ -1,0 +1,16 @@
+os: linux
+language: shell
+notifications:
+  email:
+    on_success: never
+    on_failure: never
+services:
+  - docker
+script:
+  - docker build -t hlag/https-auth-proxy:latest .
+deploy:
+  provider: script
+  script: bash docker_push.sh
+  on:
+    branch: master
+
