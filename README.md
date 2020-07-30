@@ -6,7 +6,7 @@
 # https-auth-proxy
 ##### to secure application traffic behind the ssl terminating loadbalancer including basic auth 
 
-![technical view](./https-proxy.jpg)
+![technical view](./https-auth-proxy.jpg)
 
 ## Introduction
 
