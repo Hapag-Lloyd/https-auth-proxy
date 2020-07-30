@@ -1,7 +1,7 @@
 # load nginx image
 FROM nginx:1.19.0-alpine
 
-# update container
+# update container and install additional software packages
 RUN apk update && \
     apk upgrade && \
     apk add openssl bash apache2-utils
