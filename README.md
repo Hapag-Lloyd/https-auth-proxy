@@ -53,6 +53,15 @@ The https-proxy's `entrypoint.sh` script uses this variable to set the
 required parameters in `default.conf`. Furthermore, the variables `HEALTHCHECK_PATH`
 and `ADMIN_PASSWORD` have to be set.
 
+#### DockerHub Credentials
+The DockerHub credentials included in the `docker_push.sh` file have to be added
+to the travis-ci.org configuration for the https-auth-proxy. This can be done by
+logging in with the GitHub credentials into travis-ci and add or change the variables:
+- `DOCKERHUB_USERNAME`
+- `DOCKERHUB_PASSWORD`
+
+These are the login credentials for the DockerHub.
+
 ## Example
 
 #### An aws ecs fargate example could look like this
